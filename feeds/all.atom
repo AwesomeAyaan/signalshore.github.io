@@ -1,5 +1,1441 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>SignalShore</title><link href="https://signalshore.github.io/" rel="alternate"></link><link href="https://signalshore.github.io/feeds/all.atom" rel="self"></link><id>https://signalshore.github.io/</id><updated>2019-03-16T00:00:00+05:30</updated><entry><title>Kumara-Parvatha and Savandurga</title><link href="https://signalshore.github.io/blog/Bangalore-Treks.html" rel="alternate"></link><published>2019-03-16T00:00:00+05:30</published><updated>2019-03-16T00:00:00+05:30</updated><author><name>Sohom</name></author><id>tag:signalshore.github.io,2019-03-16:/blog/Bangalore-Treks.html</id><summary type="html">&lt;p&gt;In the second week of January I had a trip planned to Bangalore. The
+<feed xmlns="http://www.w3.org/2005/Atom"><title>SignalShore</title><link href="https://signalshore.github.io/" rel="alternate"></link><link href="https://signalshore.github.io/feeds/all.atom" rel="self"></link><id>https://signalshore.github.io/</id><updated>2020-03-10T00:00:00+05:30</updated><entry><title>Abstractions and APIs AFK</title><link href="https://signalshore.github.io/blog/Abstractions-AFK.html" rel="alternate"></link><published>2020-03-10T00:00:00+05:30</published><updated>2020-03-10T00:00:00+05:30</updated><author><name>Sohom</name></author><id>tag:signalshore.github.io,2020-03-10:/blog/Abstractions-AFK.html</id><summary type="html">&lt;p&gt;I've been trying to come up with a generalization for how the world
+works. I think that I may have something interesting to offer.&lt;/p&gt;
+&lt;p&gt;Here is my framework for how I look at the world. This is built with
+some inspiration from systems design in computer science.&lt;/p&gt;
+&lt;p&gt;Note: Feel free …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I've been trying to come up with a generalization for how the world
+works. I think that I may have something interesting to offer.&lt;/p&gt;
+&lt;p&gt;Here is my framework for how I look at the world. This is built with
+some inspiration from systems design in computer science.&lt;/p&gt;
+&lt;p&gt;Note: Feel free to not read this/disregard anything said here.&lt;/p&gt;
+&lt;h1&gt;Abstractions&lt;/h1&gt;
+&lt;p&gt;The world is made up of layers and layers of abstractions. One layer
+of abstraction sits nicely on another layer of abstraction and they
+interact only through the interfaces that each layer of abstraction
+exposes. We call these interfaces, APIs in CS. This might seem a bit
+too computer-science-y but please humor me for a while.&lt;/p&gt;
+&lt;p&gt;What I mean by abstractions is that there are constructs/systems that
+allow us to interact with a much larger/complex system by mapping some
+of the complexity of that much larger system to a smaller system. This
+mapping reduces a vast amount of complexity because it does not need
+to map all the things. It only needs to map the essential features of
+the system.&lt;/p&gt;
+&lt;h1&gt;APIs&lt;/h1&gt;
+&lt;p&gt;These are just interfaces that people use to interact with complex
+systems. There can be multiple APIs for a given system and you get to
+choose which API you want to use based on how much you want to
+specialize yourself with the system. &lt;/p&gt;
+&lt;p&gt;For example, your tap is an API for the water system. You electricity
+socket is an API to the electricity grid. &lt;/p&gt;
+&lt;h2&gt;What purpose do these abstractions serve ?&lt;/h2&gt;
+&lt;p&gt;These abstractions reduce the complexity of a system to manageable
+levels. Just think about how complex the world would be if everyone
+needed to know everything about a system just to interact with
+it. Such a world would be un-liveable. &lt;/p&gt;
+&lt;p&gt;Moreover, having abstractions allows us to have specializations as
+well i.e. some people will specialize in familiarizing themselves with
+the complexity of any particular system. They may do this for a
+variety of reasons, which we will not think about here.&lt;/p&gt;
+&lt;p&gt;This also makes living easier for people since everyone does not
+&lt;em&gt;need&lt;/em&gt; to specialize in every system. They can surely choose to do so
+in multiple system, but its not a requirement.&lt;/p&gt;
+&lt;p&gt;This also allows for division of labor and concern. &lt;/p&gt;
+&lt;p&gt;For Example, you do not need to know the nitty-gritties of the
+electricity grid to change a light-bulb. Similarly, since there are
+specialists available, you do not need to learn everything about
+setting up a 20A electricity connection so that you can charge your
+electric-vehicle.&lt;/p&gt;
+&lt;p&gt;Moreover, when these systems start misbehaving, you can just off-load
+the work of debugging to the specialist who concerns with this
+system. In most cases we have contracts with a collective of people
+whose job is to take care of these systems and their APIs and
+maintain them to a reasonable level of quality. Like the water supply
+department agrees to supply potable water and the electricity company
+agrees to supply electricity at 220V-50Hz. The world works because
+these terms are not violated.&lt;/p&gt;
+&lt;h2&gt;What are the negative effects of these abstractions ?&lt;/h2&gt;
+&lt;p&gt;The negatives come into picture once people start forgetting about the
+complexity that lies behind all that abstraction. Once this starts
+happening you get into different sort of troubles.&lt;/p&gt;
+&lt;p&gt;One problem that arises is the rise of fake-specialists. These are
+snake-oil peddlers in modern times, these are the holy-men who claim
+to solve your problems with magic. It should be noted that these
+charlatans are successful only if the users believe in the lie that
+they are selling, and users start believing those lies because they do
+not have anything else to believe nor do they have sufficient
+knowledge of the system to counter these fake-specialists.&lt;/p&gt;
+&lt;p&gt;The other problem is when people start to disregard the complexity and
+the system. They start using water a little too liberally because
+water comes from a tap or from a tank. Water does not come from a
+river which is being depleted. &lt;/p&gt;
+&lt;h1&gt;The Balance ?&lt;/h1&gt;
+&lt;p&gt;I think that the balance lies in the middle. A balance would mean that
+a world where abstractions and APIs do exists but at the same time,
+people are still encouraged to explore the complexity. &lt;/p&gt;
+&lt;p&gt;This is obviously easier said than done.&lt;/p&gt;</content><category term="Meta"></category></entry><entry><title>Bash and Netcat</title><link href="https://signalshore.github.io/blog/TCP-Proxy-in-Bash.html" rel="alternate"></link><published>2020-01-12T00:00:00+05:30</published><updated>2020-01-12T00:00:00+05:30</updated><author><name>Sohom</name></author><id>tag:signalshore.github.io,2020-01-12:/blog/TCP-Proxy-in-Bash.html</id><summary type="html">&lt;p&gt;I have a fascination for bash based tooling. I prefer awk, sed, grep
+over any fancy tooling. Anyway, recently I have discovered two really
+cool features about Bash.&lt;/p&gt;
+&lt;h1&gt;TCP proxy using Named Pipes&lt;/h1&gt;
+&lt;p&gt;We all know what pipes are in bash. Pipes in bash let you create data
+streams from …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I have a fascination for bash based tooling. I prefer awk, sed, grep
+over any fancy tooling. Anyway, recently I have discovered two really
+cool features about Bash.&lt;/p&gt;
+&lt;h1&gt;TCP proxy using Named Pipes&lt;/h1&gt;
+&lt;p&gt;We all know what pipes are in bash. Pipes in bash let you create data
+streams from one process to another process. However the syntax of
+using pipes with processess can be a bit difficult and restrictive.&lt;/p&gt;
+&lt;p&gt;For example, 
+If you want to push the output of process A into process B, you would write it as such&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="sx"&gt;!bash&lt;/span&gt;
+&lt;span class="n"&gt;A&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;B&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;This is similar to &lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;A &amp;gt; file $ B &amp;lt; file
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;p&gt;Named pipes are special files that can be used to pass data between
+two processess. When a process writes to a named pipe the kernel
+processess the data internally and does not write data to the file
+system. Moreover named pipes are blocking, i.e. if there is no reader
+present then you can not write to a named pipe. This feature makes it
+ideal to signal backpressure etc etc.&lt;/p&gt;
+&lt;p&gt;You make a named pipe is bash using the &lt;code&gt;mkfifo &amp;lt;filename&amp;gt;&lt;/code&gt; command. As you can
+see, a named pipe is nothing but a first-in-first-out stream (with
+some added bells and whistles).&lt;/p&gt;
+&lt;p&gt;In a cool hack you can make a TCP proxy using netcat and named pipes&lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;nc -lp &lt;span class="m"&gt;6000&lt;/span&gt; &amp;lt;primary &lt;span class="p"&gt;|&lt;/span&gt; nc localhost &lt;span class="m"&gt;5000&lt;/span&gt; &amp;gt;primary
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;p&gt;This uses the named pipe &lt;code&gt;primary&lt;/code&gt; as a bidirectional pipe.&lt;/p&gt;
+&lt;p&gt;Let us see what is going on here.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;nc -lp 6000 &amp;lt;primary&lt;/code&gt; tells netcat to listen on locahost:6000 and accept inputs from the primary fifo.&lt;/li&gt;
+&lt;li&gt;Then we push the output (which in this case is the response to the input that is being piped from the fifo) to the next netcat instance.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;nc localhost 5000 &amp;gt;primary&lt;/code&gt; this tells netcat to connect to a server running at port 5000 and send the output to the primary fifo.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Whats more ?&lt;/h2&gt;
+&lt;p&gt;You can even copy the entire TCP stream using this little tool called &lt;code&gt;tee&lt;/code&gt;.&lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;nc -lvp &lt;span class="m"&gt;6000&lt;/span&gt; &amp;lt;primary &lt;span class="p"&gt;|&lt;/span&gt; tee mirror &lt;span class="p"&gt;|&lt;/span&gt; nc localhost &lt;span class="m"&gt;5000&lt;/span&gt; &amp;gt;primary
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;p&gt;In this case you have to read from the &lt;code&gt;mirror&lt;/code&gt; fifo and you should be
+able to see all the traffic flowing through your proxy. Change the
+fifo &lt;code&gt;mirror&lt;/code&gt; to a real file and you will have a copy of the traffic.&lt;/p&gt;</content><category term="Tech"></category></entry><entry><title>Imitation wont get me there</title><link href="https://signalshore.github.io/blog/Imitation-wont-get-you-there.html" rel="alternate"></link><published>2019-11-30T00:00:00+05:30</published><updated>2019-11-30T00:00:00+05:30</updated><author><name>Sohom</name></author><id>tag:signalshore.github.io,2019-11-30:/blog/Imitation-wont-get-you-there.html</id><summary type="html">&lt;p&gt;How many times when we want to do something do we stop and think that
+maybe what we are attempting to do is futile because we do not have
+what the pros have ?&lt;/p&gt;
+&lt;p&gt;maybe it's because you don't have that cutting edge climbing shoes, or
+that expensive camera, or that …&lt;/p&gt;</summary><content type="html">&lt;p&gt;How many times when we want to do something do we stop and think that
+maybe what we are attempting to do is futile because we do not have
+what the pros have ?&lt;/p&gt;
+&lt;p&gt;maybe it's because you don't have that cutting edge climbing shoes, or
+that expensive camera, or that fancy guitar.&lt;/p&gt;
+&lt;p&gt;Most of us have some thing that we would like to get better at, be it
+any particular sport or mathematics or computer programming or
+trekking for that matter and in most of these fields there are certain
+people who are at the very top. These are the inspiring people, these
+are the people we look up to and often we imitate the habits of these
+people, believing that imitation would help us get there. Now this
+imitation can often take a bad turn. I'll make my case below.&lt;/p&gt;
+&lt;p&gt;What follows below was very true for me in certain aspects. YMMV. I do
+not claim that I have the fundamental truth. All I know is that at
+this point in time and space, this is true for me.&lt;/p&gt;
+&lt;h1&gt;All Imitation is not the same&lt;/h1&gt;
+&lt;p&gt;I think that there are two very different forms of imitation. In one
+form you look at a prolific programmer and you start
+studying/practicing how they practised. Or you look at the footsteps
+of a developer that you admire and study what they did etc etc. I
+believe that this is a good model to imitate.&lt;/p&gt;
+&lt;p&gt;On the other hand you have the kind of imitation where you look at
+what possessions a person has or what tools that person uses and you
+conclude that the possession/tool is a part of the reason why they are
+so prolific. Case in point, it's the fancy Mac Book Pro that makes
+prolific programmer so prolific and maybe, if you also use a Mac Book
+Pro you would be equally closer to being prolific.&lt;/p&gt;
+&lt;p&gt;It might seem that these are small examples that I have cherry picked,
+but I have seem myself do it a lot of times and I have seen other
+people do it too.&lt;/p&gt;
+&lt;h1&gt;The scene in Tech ?&lt;/h1&gt;
+&lt;p&gt;Have you seen a popular Youtuber do a &lt;em&gt;setup tour&lt;/em&gt;. Have you seen
+questions like &lt;em&gt;which text editor does &lt;insert person here&gt; use&lt;/em&gt; (I
+have googled this myself multiple times). There are multiple varieties
+of this. Which window manager, which standing desk, which headphone,
+etc etc.&lt;/p&gt;
+&lt;p&gt;Now, I am not saying that everyone who watches these videos are people
+who want to get these gadgets so that they get better at whatever they
+are trying to do. However, there are certain people who are trying to
+find answers in the wrong places.&lt;/p&gt;
+&lt;p&gt;In tech this often happens in the form of someone explaining that
+buying a &lt;em&gt;good&lt;/em&gt; laptop is the way to get started. Believe me, this
+sort of advise is very common on the internet. I used to think this
+too for a long time and I used to hate my current laptop which I
+bought from college. It was a low-end device but nevertheless it was a
+device that actually worked and it was the best I could afford at that
+point. It took me quite some time to see that point.&lt;/p&gt;
+&lt;p&gt;I have seen inspiring people do inspiring work is shittier laptops and
+I can tell you (and myself) that the choice of laptop does not
+matter. It's a &lt;em&gt;good to have&lt;/em&gt;, not a &lt;em&gt;necessity&lt;/em&gt;.&lt;/p&gt;
+&lt;h1&gt;A word about Isomorphic Mimicry&lt;/h1&gt;
+&lt;p&gt;I heard of this term first time In episode 138 (12 dream reforms) on
+the Seen and the Unseen podcast.&lt;/p&gt;
+&lt;p&gt;https://en.wikipedia.org/wiki/Capacity_building#Isomorphic_mimicry&lt;/p&gt;
+&lt;p&gt;This method is used by governments of developing countries which try
+to mimic other government success's by replicating methods and policy
+designs deemed successful in other countries. This does not work in
+certain cases for it ignores all ground level realities.&lt;/p&gt;
+&lt;p&gt;Now, when I heard it for the first time, I could immediately see how
+this could apply in a personal way.&lt;/p&gt;
+&lt;h1&gt;How did I fall into this trap ?&lt;/h1&gt;
+&lt;p&gt;For a decent amount of time I used to believe that I needed a good and
+powerful laptop to do good work. Which is not the case. &lt;/p&gt;
+&lt;p&gt;I kind of like cycling, and for a long time I used to believe that I
+need a very fancy bicycle so that I can do "proper" cycling. I enjoy
+thinking about "bicycle touring" and it's a sport where you need some
+amount of gear. I quite like the gear too. But, for a lot of time I
+used to believe that having the gear will make you an expert
+tourer. Which is false. There are lots of people who use non-fancy
+bicycles to tour.&lt;/p&gt;
+&lt;p&gt;The fact that the bicycling industry has come up with various
+different types of bicycles each designed for a specific form of the
+sport does not help either. There are mountain bikes, road bikes,
+hybrids, commuters, gravel bikes, touring bikes, TT bikes etc
+etc. Now, there are different specialized sports that need these
+specialized bicycle variants, but the point is that for the kind of
+riding I do, all of the differences do not matter at all. So, the
+bottom line for me is not that these differences are unnecessary, but
+that they are unnecessary for me.&lt;/p&gt;
+&lt;p&gt;The same logic applies to programming and nay sort of exercise that
+requires some gear. If you are just getting started, the kind of gear
+that you have does not really matter. This is mainly because the gear
+plays a very small part when you are just starting out with
+something. Often when you are starting out, you yourself are the
+biggest bottleneck, and the only way you can get better is to becomes
+less of a bottleneck. The equipment (bicycle, computer) that you own
+beings to matter only when they begin to become the bottleneck and not
+you.&lt;/p&gt;
+&lt;h1&gt;How did I get out of it ?&lt;/h1&gt;
+&lt;p&gt;I don't think I have fully managed to look byond the BS in most fields
+when it comes to arguments like these, however I have come a long way.&lt;/p&gt;
+&lt;p&gt;It was a blog post on the website
+of
+&lt;a href="https://surlybikes.com/blog/some_answers_to_just_about_any_bike_forum_post_ive_ever_read?fbclid=IwAR3AA7ubNCtsUtwSdEtDBXtZ0HMLpIhq4sv_QWkxMXPiQXvg1jrmv689FXU"&gt;Surly Bikes&lt;/a&gt;. Read
+it. It is amazing. Surly makes amazinf bikes and are known for their
+steel framed touring bikes. People have travelled around the world on Surly Long Haul Truckers. &amp;lt;3&lt;/p&gt;
+&lt;p&gt;Also, outside of cycling I have seen people do great things on not-so-great equipment, the equipment does not really matter. :-)&lt;/p&gt;
+&lt;h1&gt;Where else does this happen ?&lt;/h1&gt;
+&lt;p&gt;There is a similar narrative in almost all forms of sport, where we
+are sold the idea that in order to become a pro or in order to
+participate in that sport, you need to have some specialized
+equipment.&lt;/p&gt;
+&lt;p&gt;You need &lt;em&gt;running shoes&lt;/em&gt; for running.
+You need &lt;em&gt;special climbing shoes&lt;/em&gt; for climbing
+You need a &lt;em&gt;good laptop&lt;/em&gt; for programming.
+You need a &lt;em&gt;Gaming PC&lt;/em&gt; for gaming.
+You need a &lt;em&gt;Kindle&lt;/em&gt; (or any e-reader) to experience ebook properly. 
+You need a &lt;em&gt;mechanical keyboard&lt;/em&gt; to experience typing joy.
+You need a &lt;em&gt;audiophile headphone&lt;/em&gt; to experience good music quality.&lt;/p&gt;
+&lt;p&gt;All of this is just shit advise tbh.&lt;/p&gt;
+&lt;p&gt;As Sheldon Cooper said&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You only &lt;strong&gt;need&lt;/strong&gt; to breathe. Rest everything is optional. &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1&gt;What's the Tl;DR ?&lt;/h1&gt;
+&lt;p&gt;If I were to sum everything up for myself, it would be this. &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If there is something that you want to do, and you are waiting for
+that perfect equipment or that perfect time or someone told you that
+you need to master something else before doing that; they were lying
+or they didn't know better themselves. All, you need is to just get
+started. Get the ball rolling with whatever you have. :-)&lt;/p&gt;
+&lt;/blockquote&gt;</content><category term="Meta"></category></entry><entry><title>The Quest for Truth; and other things</title><link href="https://signalshore.github.io/blog/The-quest-for-truth-and-other-things.html" rel="alternate"></link><published>2019-11-24T00:00:00+05:30</published><updated>2019-11-24T00:00:00+05:30</updated><author><name>Sohom</name></author><id>tag:signalshore.github.io,2019-11-24:/blog/The-quest-for-truth-and-other-things.html</id><summary type="html">&lt;p&gt;I've been an inquisitive kid when I was young. I remember picking up
+random things and asking endless series of questions etc etc. I still
+do all those. I can be relentless when it comes to looking for answers
+that do not satisfy my internal metric for truth.&lt;/p&gt;
+&lt;p&gt;This was …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I've been an inquisitive kid when I was young. I remember picking up
+random things and asking endless series of questions etc etc. I still
+do all those. I can be relentless when it comes to looking for answers
+that do not satisfy my internal metric for truth.&lt;/p&gt;
+&lt;p&gt;This was partially inspired by
+a &lt;a href="https://philosophizethis.org/belief/"&gt;Episode 41 (Belief)&lt;/a&gt; from the
+&lt;em&gt;Philosophize This!&lt;/em&gt; podcast, and partially about certain things that I
+have observed in myself, but did not really want to address/accept.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h6&gt;Everything that follows is what I think and this is true for me at this point in time and space. There is a very good chance that the definition will evolve and grow&lt;/h6&gt;
+&lt;/blockquote&gt;
+&lt;h1&gt;What is truth and how to find it ?&lt;/h1&gt;
+&lt;p&gt;There is no objective truth. There is no objective truth because I as
+a human being do not have complete information about the world.&lt;/p&gt;
+&lt;p&gt;You almost never have full information hence you will never find the
+ultimate truth. This however does not mean that you should stop
+looking. In fact, far from it actually. I would argue that the fact
+that there is no ultimate truth, makes it all the more valuable to
+keep looking for it.&lt;/p&gt;
+&lt;p&gt;Imagine how boring it would be to live in a world with a finite amount
+of truth in it. Once you have figured out a that amount of truth, there
+would be nothing left to do because you have figured it all out.&lt;/p&gt;
+&lt;p&gt;Having no definitive truth makes life interesting, for there is always
+something new to learn; something new to find out. Moreover, having
+partial truths is better than not having any truths in the first
+place.&lt;/p&gt;
+&lt;h1&gt;The internal Truth Police and skepticism&lt;/h1&gt;
+&lt;p&gt;I have an internal metric for truth. This means that if some
+hypothesis does not reconcile with my metric for truth then I find it
+very difficult to accept said hypothesis. This often manifests in the form of
+dissatisfaction from a proposed solution to a problem at work or not
+trusting a narrative until a convincing argument is presented, etc
+etc. Needless to say this makes me quite obnoxious and a difficult
+person at times.&lt;/p&gt;
+&lt;p&gt;I've been reading a bunch of old philosophy and one school of
+thought that I find myself agreeing with a lot is is Skeptics (and the
+Stoics as well). I would argue that this &lt;em&gt;deliberate&lt;/em&gt; skepticism is good. It keeps
+me on my toes and I can see bullshit from half a mile away. This habit
+has made me take myself and my beliefs very seriously as well.&lt;/p&gt;
+&lt;p&gt;It has also made me very very skeptical of grand claims that seem too
+good to be true. After all, there is no free lunch, and everything has
+a cost.&lt;/p&gt;
+&lt;h1&gt;Belief&lt;/h1&gt;
+&lt;p&gt;During growing up, I learnt very early on that most of the things that
+my family told me about how the world works is False. &lt;/p&gt;
+&lt;p&gt;The biggest of these experiences heppened when I was moving to
+Bangalore and everyone I knew in Kolkata told me that South India was
+a weird place. Their food, their language and their customs are
+different and they are very racist towards outsiders. My personal
+experience was much different and exactly the opposite. There was a
+similar mismatch between what people said and how my experience was
+when I travelled to Chennai and until quite recently when I moved to
+Mumbai. The point is, I learnt to be skeptical about everything I hear
+and that has consumed certain other parts of my life.&lt;/p&gt;
+&lt;p&gt;In the podcast we talk about how Belief and truth are two different
+things. When you think about it, it makes sense. After all, just
+because you believe in something does not mean that it has to be
+true. So, how do you make sure that your beliefs are as close to the
+truths as possible ?&lt;/p&gt;
+&lt;p&gt;In the podcast the host says that one way to make sure that your
+beliefs are as close to the truth as possible is by scrutinizing your
+beliefs in the most ruthless and the most thorough manner
+possible. Now, this is not an easy work. Moreover, this is not a
+one-off task. It's a lifelong endeavour. Pledging your allegiance to
+the Truth means that you have a lifelong responsibility to make sure
+that your beliefs are as closer to the truth as possible.&lt;/p&gt;
+&lt;p&gt;The aim is to as intellectually rigorous as possible.&lt;/p&gt;
+&lt;h1&gt;Intellectually Rigorous Thinking&lt;/h1&gt;
+&lt;p&gt;I do not idolize a lot of people, however I do idolize certain kind of
+behaviour in people. I really value knowledge and I hold learning/the
+ability and willingness to learn new things above everything else. &lt;/p&gt;
+&lt;p&gt;In my experience the most forward thinking, interesting, wise and calm
+and kind people are the ones who never stopped learning in the first
+place. &lt;/p&gt;
+&lt;p&gt;I read somewhere that &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Life is best filled by learning as much as you can about as much as you can.
+and I agree with this completely. &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;So, one thing that I noticed amongst the people I idolized was that
+they had a very lear way of thinking about things. I'm not talking
+about a certain ideology. I'm talking about a way of &lt;em&gt;thinking&lt;/em&gt; about
+things no matter which ideology they follow.&lt;/p&gt;
+&lt;p&gt;Initially I was quite impressedd by Jordan Peterson and he advocated
+to "think for yourself". That was quite powerful, until I discovered
+Slavoj Zizek and a bunch of other philosophers (can not recall then
+but the Hellinistic age was rad), and its amazing to see how they can
+think through an issue or a problem.&lt;/p&gt;
+&lt;p&gt;One major thing that all these people have in common and all of them
+advocate for is to read a lot, or in other words to study as much as
+possible. The world is increasingly complex with a lot of interrelated
+connections and you can only begin to make sense of it by trying to
+understand how these relationships unfold. What I am presonally
+impressedd by is that after a certain amount of time you begin to see
+things you could not see before, like hidden patterns that show you
+how the world works. Listening to people like Bill Gates, Harari,
+Peterson (to some extent), Zizek etc etc gives you a feeling of that.&lt;/p&gt;
+&lt;p&gt;I recently came across Hellinistic Skepticism and one of the major take
+aways from learning about Hellinistic Skepticism is that they believed
+that truth is not binary and it was impossible to attain it and they
+valued knowing both sides of an argument very well.&lt;/p&gt;
+&lt;p&gt;I read somewhere that &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You don't know something unless you can argue both &lt;em&gt;for&lt;/em&gt; and &lt;em&gt;against&lt;/em&gt; it; cause otherwise your opinions are not well informed.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This was a major learning moment for me personally. The fundamental
+idea is to analyze your life trough a very critical lens, so you can
+be sure that whatever you say, however you act, everything you do can
+be reconciled with your internal metric of truth. Otherwise, what's
+the point ?&lt;/p&gt;
+&lt;h1&gt;Kindness and Empathy&lt;/h1&gt;
+&lt;p&gt;In this process to find the closest truth one can often become quite
+unkind, both to one's self and to other people. This is something that
+I am guilty of myself and I am trying my best to get better at being
+kind.&lt;/p&gt;
+&lt;p&gt;I will with a quote -&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Doubt is not a pleasant condition but Certainty is absurd. - Voltaire&lt;/p&gt;
+&lt;/blockquote&gt;</content><category term="Meta"></category></entry><entry><title>Programming Languages Part B</title><link href="https://signalshore.github.io/blog/programming-languages-part-b.html" rel="alternate"></link><published>2019-10-06T00:00:00+05:30</published><updated>2019-10-06T00:00:00+05:30</updated><author><name>Sohom</name></author><id>tag:signalshore.github.io,2019-10-06:/blog/programming-languages-part-b.html</id><summary type="html">&lt;p&gt;In Part B we study functional programming languages with dynamic type
+checking. For this we use the programming language Racket which is a
+dialect of the LISP programming language. During the second week we
+also implement a programming language interpreter. Even though it is a
+toy language it gives a …&lt;/p&gt;</summary><content type="html">&lt;p&gt;In Part B we study functional programming languages with dynamic type
+checking. For this we use the programming language Racket which is a
+dialect of the LISP programming language. During the second week we
+also implement a programming language interpreter. Even though it is a
+toy language it gives a lot of insight into how interpreters work.&lt;/p&gt;
+&lt;h1&gt;Part B : Racket&lt;/h1&gt;
+&lt;p&gt;I will highlight what were the major learning points for me.&lt;/p&gt;
+&lt;h2&gt;Dynamic Typing&lt;/h2&gt;
+&lt;p&gt;Static or dynamic typing is defined on the basis of when the type
+checking takes place during the life-cycle of a program. In static type
+checking the type checking happens at compile time while in dynamic
+type checking the type checking happens at run time. Dynamic typing
+can be convenient when you are writing programs as you do not have to
+figure out the types of arguments and variables in your program
+beforehand and more programs are accepted by the system, but at the
+same time this also means the most of the errors happen at run-time.&lt;/p&gt;
+&lt;h2&gt;Delayed Evaluation&lt;/h2&gt;
+&lt;p&gt;In a programming language the manner in which expressions (and
+sub-expressions) are evaluated can have a large impact on how programs
+are constructed.&lt;/p&gt;
+&lt;p&gt;Generally when we evaluate a function expression, we evaluate the
+sub-expressions first before evaluating the actual function. This is
+called applicative order evaluation.&lt;/p&gt;
+&lt;p&gt;For example consider this function which tries to emulate the functionality of the 'if' expression.&lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
+2&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;define&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;my-if&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="n"&gt;b&lt;/span&gt; &lt;span class="n"&gt;c&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="n"&gt;b&lt;/span&gt; &lt;span class="n"&gt;c&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;p&gt;Let's use this 'my-if' as we would use a normal if clause&lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
+2&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;my-if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="c1"&gt;;; result :=&amp;gt; 3&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;p&gt;This works properly. However, the next one doesn't.&lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
+2&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;my-if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;span class="c1"&gt;;; result :=&amp;gt; Error&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;p&gt;This is because when 'my-if' is being evaluated, then all the three
+arguments to the function is evaluated first before evaluating
+'my-if'. This does not happen when we use the normal 'if' conditional
+because if is a special form. It evaluates the conditional argument
+first and based on that result it evaluates either of the branches.&lt;/p&gt;
+&lt;p&gt;There should be a way of passing around expression in a language
+without actually evaluating them. In Racket we can do this by wrapping
+the function that we want to dealy in a lambda function that takes no
+arguments. Thus we can pass this lambda function around as much as  we
+want and we can evaluate it when we need it by using an extras set of
+parenthesis.&lt;/p&gt;
+&lt;p&gt;Thus we need to rewrite the old functions. We can do it as&lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
+2&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;define&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;new-if&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="n"&gt;b&lt;/span&gt; &lt;span class="n"&gt;c&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;b&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;c&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;p&gt;and we will call this function as &lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
+2
+3&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;new-if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; 
+        &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;lambda&lt;/span&gt; &lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+        &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;lambda&lt;/span&gt; &lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;p&gt;This is called thunking. When we wrap a function in an empty lambda
+function, then we create a thunk. Instead of 'e1' we use '(lambda ()
+e1)'. So when the thunk is passed to a function, the thunk gets
+evaluated first into the function and then we can evaluate the
+function to get the result.&lt;/p&gt;
+&lt;p&gt;This is just one of the many programming idioms that are there that we
+can use to mess around with the order of evaluation in a program.&lt;/p&gt;
+&lt;h2&gt;Delay &amp;amp; Force (call by need or lazy evaluation or promises)&lt;/h2&gt;
+&lt;p&gt;So thunking provides us a solution to the problem of evaluating
+expression that are not needed.  What about expressions that can be
+used in multiple places in a program ? If we use thunking we can delay
+the evaluation untill needed but we will still have to evaluate it
+every single time it is needed. Here we see another design
+consideration. It is not only important to have a framework to delay
+evaluation, it is also important to have to framework that allows you
+to avoid re-computation.&lt;/p&gt;
+&lt;p&gt;This is called call-by-need or lazy evaluation.&lt;/p&gt;
+&lt;h3&gt;What is Lazy evaluation ?&lt;/h3&gt;
+&lt;p&gt;Lazy evaluation is an evaluation strategy in which an expression is
+not evaluated when they are bound to variables. Instead they are
+evaluated when their results are needed by other computations. This is
+the default mode of evaluation used in the Haskell programming
+Language.&lt;/p&gt;
+&lt;p&gt;One way to do this (in Racket) is to transform every function call
+into a value look-up. We can store the thunk of the function in a cons
+cell along with the result. If the result is not computed then we will
+evaluate the thunk and store the value in the cell (we will mutate the
+cons cell) and thus, the next time we need to evaluate the same
+function, we can just look up the value in the cons cell.&lt;/p&gt;
+&lt;p&gt;Basically when we implement a system where we store the output of a
+function if it has been evaluated once. As noted above this can be
+done easily using mutable cons cells.&lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
+2
+3
+4
+5
+6
+7
+8
+9&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;define&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;delay&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;mcons&lt;/span&gt; &lt;span class="no"&gt;#f&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;define&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;force&lt;/span&gt; &lt;span class="k"&gt;thunk&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;mcar&lt;/span&gt; &lt;span class="k"&gt;thunk&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+        &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;mcdr&lt;/span&gt; &lt;span class="k"&gt;thunk&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+        &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;begin&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;set-mcar!&lt;/span&gt; &lt;span class="k"&gt;thunk&lt;/span&gt; &lt;span class="no"&gt;#t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;               &lt;span class="c1"&gt;;; set the flag to true&lt;/span&gt;
+               &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;set_mcdr!&lt;/span&gt; &lt;span class="k"&gt;thunk&lt;/span&gt; &lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="nb"&gt;mcdr&lt;/span&gt; &lt;span class="k"&gt;thunk&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt;   &lt;span class="c1"&gt;;; replace the thunk with the result&lt;/span&gt;
+               &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;mcdr&lt;/span&gt; &lt;span class="k"&gt;thunk&lt;/span&gt;&lt;span class="p"&gt;))))&lt;/span&gt;                    &lt;span class="c1"&gt;;; return the result&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;p&gt;This is something that hit me in the face with a brick when I first understood it.
+It's so beautiful and cool. :-)&lt;/p&gt;
+&lt;h2&gt;Streams; Producers and Consumers&lt;/h2&gt;
+&lt;p&gt;Let me preface this section by stating that before this I had no idea
+what streams were and how they worked.&lt;/p&gt;
+&lt;p&gt;A stream (in the context of computers) is an infinite source of
+data. It is never ending. This is a very hand-wavy definition and it
+does not paint a truthful picture but it is good enough for
+now. Streams are produced by something called as a producer. The
+producers knows only how to produce a stream of data endlessly.&lt;/p&gt;
+&lt;p&gt;Now, that we have an endless stream of data, what do we do with it ?
+This is where consumers come in. Consumers consume the data from the
+stream in whatever manner they want.&lt;/p&gt;
+&lt;p&gt;A good analogy is rivers. A glacier is the producer which produces and
+endless stream of water and humans are the consumers. The consumers
+get to decide how to and how much to consume the stream.&lt;/p&gt;
+&lt;p&gt;Constructing an endless source of data is quite impossible since you
+never really know when to stop. So how do producers produce an endless
+stream of data ? To do that producers use a short-cut. To construct an
+infinite stream of data all you need is a starting point and a method
+to go to the next point. With these two information you can create
+data on-demand without needing to know when to stop.&lt;/p&gt;
+&lt;p&gt;We will try to understand this with an example.&lt;/p&gt;
+&lt;p&gt;Consider the set of all Natural Numbers which we can all agree that is
+an infinite set.&lt;/p&gt;
+&lt;p&gt;How would one go about printing out all the natural numbers if the
+entire set is infinite ?&lt;/p&gt;
+&lt;p&gt;The answer is that one does not need to print all the natural numbers
+all at once. All one needs to do is to keep track of the current
+number being printed and then increment the number by 1 when the next
+natural number is needed. In this case the starting point is 1 and the
+method of obtaining the next number is that you increment the current
+number by 1.&lt;/p&gt;
+&lt;p&gt;This gives us a good starting point of how to go about designing
+streams.  In a stream (in this case) the flow of data is controlled by
+the consumer as data is produced only when it is asked for by the
+consumer and the only two pieces of information needed by either the
+producer or the consumer is the starting element of the stream and the
+formula.&lt;/p&gt;
+&lt;p&gt;So we can code up streams by writing a thunk that evaluates to a pair
+wherein the first element is the first element and the second element
+is a thunk that has everything we need to get all the elements from 2
+to infinity.&lt;/p&gt;
+&lt;p&gt;Let us write a stream that just produces an infinite stream of 1's&lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
+2
+3
+4
+5
+6
+7
+8
+9&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;define&lt;/span&gt; &lt;span class="n"&gt;ones-st&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;lambda&lt;/span&gt; &lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;cons&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="n"&gt;ones&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt;
+
+&lt;span class="c1"&gt;;; we call this stream by&lt;/span&gt;
+
+&lt;span class="c1"&gt;;; this gives the first element&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;car&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;one-st&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+
+&lt;span class="c1"&gt;;; this gives us the second element&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;car&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;cdr&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;one-st&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;p&gt;The stream is a thunk which when evaluated gives a pair. The first
+element in the pair is the first value in the stream and the second
+element is another thunk. We can clearly see how this works in the way
+we call it.&lt;/p&gt;
+&lt;p&gt;This stream is a bit easy to understand since there is not
+transformation that is taking place between the subsequent elements.&lt;/p&gt;
+&lt;p&gt;Now we will define the same stream and put a transformation function
+in the middle. This function will not do anything but it will act as a
+good placeholder for future transformations.&lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
+2
+3
+4&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;define&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;ones&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;define&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;ones-help&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;cons&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;lambda&lt;/span&gt; &lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;ones-help&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;+&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)))))&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;ones-help&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;p&gt;In this way we have a framework of how to go about designing different streams. 
+Let use write an infinite stream of the square of all the natural numbers.&lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
+2
+3
+4&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;define&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;square&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;define&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;square-help&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;cons&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;*&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;lambda&lt;/span&gt; &lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;square-help&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;+&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)))))&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;square-help&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;p&gt;How do we get elements from the stream ? &lt;/p&gt;
+&lt;p&gt;To get the first element we evaluate the stream and get the first
+element form the pair. To get the second element from the stream we
+evaluate the cdr of the pair we get.&lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
+2
+3
+4
+5&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;car&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;square&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;span class="c1"&gt;;; first element&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;car&lt;/span&gt; &lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="nb"&gt;cdr&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;square&lt;/span&gt;&lt;span class="p"&gt;))))&lt;/span&gt;
+&lt;span class="c1"&gt;;; second element&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;p&gt;Thus we can get new elements from the list.&lt;/p&gt;
+&lt;p&gt;Note: This is the exact same way in which Alonzo Church defines Church Numerals. &lt;/p&gt;
+&lt;h2&gt;Datatype with structs.&lt;/h2&gt;
+&lt;p&gt;SML has records and datatype bindings that allows us to make compound
+dataypes and data-structures and it lets us use pattern matching to
+get the desired data out form the data structure.&lt;/p&gt;
+&lt;p&gt;For Example,&lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
+2
+3
+4
+5
+6
+7
+8&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kr"&gt;val&lt;/span&gt; &lt;span class="nv"&gt;record_test&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt;  &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="n"&gt;first&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;sohom&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;second&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;b&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;number&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;1000&lt;/span&gt; &lt;span class="p"&gt;};&lt;/span&gt;
+&lt;span class="cm"&gt;(* creates a new record in the env and binds it to record_test *)&lt;/span&gt;
+
+&lt;span class="kr"&gt;val&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="n"&gt;first&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="n"&gt;t&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;second&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="n"&gt;tt&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;string&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;number&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="n"&gt;ttt&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;int&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="n"&gt;record_test&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+&lt;span class="cm"&gt;(* This pattern matches the record on the left with the record on&lt;/span&gt;
+&lt;span class="cm"&gt;the right and binds the values after extracting them from the&lt;/span&gt;
+&lt;span class="cm"&gt;record *)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;p&gt;We could implement the same kind of the thing in Racket using cons
+cells but there is an even better way in Racket. In Racket we can use
+structs to define custom data types.&lt;/p&gt;
+&lt;p&gt;When we add a new datatype with &lt;code&gt;struct&lt;/code&gt; it introduces a bunch of
+other functions into the environment. Let me illustrate this with an example.&lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;struct&lt;/span&gt; &lt;span class="n"&gt;foo&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;field1&lt;/span&gt; &lt;span class="n"&gt;field2&lt;/span&gt; &lt;span class="n"&gt;field3&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;p&gt;This will introduce a constructor for this struct, a checker for this
+struct and accessor functions for each field in the struct. This is
+super handy.&lt;/p&gt;
+&lt;p&gt;So we can do things like&lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt; 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;define&lt;/span&gt; &lt;span class="n"&gt;new_t&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;foo&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;foo?&lt;/span&gt; &lt;span class="n"&gt;new_t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="c1"&gt;;; evaluates to #t&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;foo-field1&lt;/span&gt; &lt;span class="n"&gt;new_t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="c1"&gt;;; evaluates to 1&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;foo-field2&lt;/span&gt; &lt;span class="n"&gt;new_t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="c1"&gt;;; evaluates to 2&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;foo-field3&lt;/span&gt; &lt;span class="n"&gt;new_t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="c1"&gt;;; evaluates to 3&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;p&gt;I think this is really cool. Especially because the user does not have
+to write accessor functions for all the types they define, but instead
+the language system generates them. Also, struct is not a syntactic
+sugar for some list or something else. Struct actually creates a new
+type in the environment.&lt;/p&gt;
+&lt;h2&gt;Implementing a Programming Language&lt;/h2&gt;
+&lt;p&gt;This something that we actually have to do this course. It's a part of
+the homework.&lt;/p&gt;
+&lt;p&gt;I will not go into the details but this week was particularly very
+interesting because you had to first understand the syntax and the
+semantics of the programming language that you were supposed to build
+and then write the interpreter for it. &lt;/p&gt;
+&lt;p&gt;One thing that I did get over was my fear of interpreters and realize
+that a compiler or an interpreter is just a normal program; there is
+nothing too fancy about it. It is a normal program in the sense that
+it takes data input in some form, and produces an output in some form
+which is mostly transformation based on certain rules.&lt;/p&gt;
+&lt;p&gt;I had a really great time trying and implementing Closures and writing
+the main eval function.&lt;/p&gt;
+&lt;h3&gt;What is the environment ?&lt;/h3&gt;
+&lt;p&gt;During programming we often hear about the "environment" a lot but we
+do not spend too much time thinking about what it actually is. Turns
+out that the environment is just a mapping that stores the identifiers
+that the values/expressions are bound too. When you think about it,
+this makes sense, right ?&lt;/p&gt;
+&lt;p&gt;I mean, what is the role of the environment ? Like all the environment
+is supposed to do is to make sure that when the expressions are
+evaluated they get evaluated with the correct values.&lt;/p&gt;
+&lt;p&gt;In the made up programming language we  do this by using a list as the
+environment.&lt;/p&gt;
+&lt;h3&gt;Closures and Lexical Scoping&lt;/h3&gt;
+&lt;p&gt;In the MUPL (made up programming language), we implement lexical
+scoping and closures.&lt;/p&gt;
+&lt;p&gt;It's quite simple. When the interpreter encounter a function definition
+it just wraps the function along with the env in a data structure
+(like a cons of two elements) and that is about it.&lt;/p&gt;
+&lt;p&gt;The most challenging part of this whole exercise was to write the case
+for the function calls.&lt;/p&gt;
+&lt;h2&gt;Static Checking&lt;/h2&gt;
+&lt;p&gt;We talked briefly about static checking in the first paragraph.
+In this section we will look at static checking in more detail.&lt;/p&gt;
+&lt;p&gt;Couple of thing first.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ML has static type checking&lt;/li&gt;
+&lt;li&gt;Racket does not have static type checking&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The job of static checker is to reject programs after they have been
+parsed but before they have been run.&lt;/p&gt;
+&lt;p&gt;The static checker checks the program for correctness. &lt;/p&gt;
+&lt;p&gt;How do we define this correctness ?&lt;/p&gt;
+&lt;p&gt;One way we check for correctness is by evaluating the program against
+a set of rules. Most commonly these rules are the typing rules. Mix
+all of these together and you the type checker and the set of rules
+that are used to evaluate the correctness of a program is called the
+type system.&lt;/p&gt;
+&lt;h3&gt;Correctness of a type system&lt;/h3&gt;
+&lt;p&gt;The type system is a part of the programming language definition that
+specifies what type of programs are legal and what are not in that
+programming language.&lt;/p&gt;
+&lt;p&gt;The Type System is designed to prevent a certain kind of bad behaviour
+in the programming language. If the type system prevents the behaviour
+that it claims to prevent then the type system is correct.&lt;/p&gt;
+&lt;p&gt;We use two different and opposing metrics to determine the correctness
+of a type system:&lt;/p&gt;
+&lt;h4&gt;&lt;strong&gt;Soundness&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;A type system is sound if all type-checked programs are correct.
+This means that the type checker will never accept an in-correct
+program, i.e. there wont be any false negetives. &lt;/p&gt;
+&lt;h4&gt;&lt;strong&gt;Completeness&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;A type system is complete if all correct programs can be accepted by
+the type checker. This means that the Type Checker will never reject a
+correct program, i.e. there wont be any false positives.&lt;/p&gt;
+&lt;p&gt;We define the positives/negetives with respect to the ppresence of
+undesirable bugs in a program. These are the bugs that the type
+checker is designed to prevent. Hence, for &lt;em&gt;negetive&lt;/em&gt; the type checker
+claims that the bug is not present in the program i.e. the program is
+correct and vice-versa.&lt;/p&gt;
+&lt;p&gt;In the broader context of logic systems these terms have some interesting meanings.
+1. A system is sound if only true statemenats are proveable.
+2. A system is complete if &lt;em&gt;all&lt;/em&gt;  true statements are proveable.&lt;/p&gt;
+&lt;p&gt;Now, completeness is much more difficult to have than soundness. This
+is because for a type checker to be complete it needs to show that all
+correct programs are accepted by it and the set of &lt;em&gt;all correct
+programs&lt;/em&gt; is inifinite in nature. The tradeoff that gets made is that
+programming language designers will rather have a sound system than a
+complete system.&lt;/p&gt;
+&lt;h2&gt;That's it&lt;/h2&gt;
+&lt;p&gt;This course bought me immense joy and I hope that it's the same for
+you as well.  Bear in mind that week 2 will be quite difficult but
+just push through. It will be worth it.&lt;/p&gt;</content><category term="Learning"></category><category term="CS"></category></entry><entry><title>The Book System</title><link href="https://signalshore.github.io/blog/The-Book-System.html" rel="alternate"></link><published>2019-08-04T00:00:00+05:30</published><updated>2019-08-04T00:00:00+05:30</updated><author><name>Sohom</name></author><id>tag:signalshore.github.io,2019-08-04:/blog/The-Book-System.html</id><summary type="html">&lt;p&gt;I like processes. Often is very difficult for me to get started with
+something if I do not have a process in place. Something about
+processes makes me feel safe and routine.&lt;/p&gt;
+&lt;p&gt;Recently I was struggling to read books and hence I decided that I
+needed to come up a …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I like processes. Often is very difficult for me to get started with
+something if I do not have a process in place. Something about
+processes makes me feel safe and routine.&lt;/p&gt;
+&lt;p&gt;Recently I was struggling to read books and hence I decided that I
+needed to come up a process to read books.&lt;/p&gt;
+&lt;h1&gt;The Setup&lt;/h1&gt;
+&lt;p&gt;I have 3 modes of reading and they are divided based on how dense the books are.&lt;/p&gt;
+&lt;h2&gt;The physical book&lt;/h2&gt;
+&lt;p&gt;This is for the very very dense (information dense) books. I generally
+refrain from buying physical books because of the Carbon footprint
+associated with them, but i do make an exception for books that are
+too good and too dense.&lt;/p&gt;
+&lt;p&gt;Often when I read books I take notes and annotate them and having
+physical book is just better for this.&lt;/p&gt;
+&lt;p&gt;Also, i am a big fan of used books, and I love picking up books with
+inscriptions on them. Just something that adds a personal touch to the
+books.&lt;/p&gt;
+&lt;h2&gt;The Android phone&lt;/h2&gt;
+&lt;p&gt;This is probably the best and the most versatile device for reading
+books.  Now sure this is not too good for taking annotations and all
+but that's okay.&lt;/p&gt;
+&lt;p&gt;I use this primarily for reading when I am commuting as this is much
+more portable tan the Kindle.&lt;/p&gt;
+&lt;p&gt;I mainly read books that are medium to light dense in this
+format. Mostly light dense books/articles.&lt;/p&gt;
+&lt;p&gt;I use Pocket to keep a track of web articles that I want to read.&lt;/p&gt;
+&lt;h2&gt;The Kindle&lt;/h2&gt;
+&lt;p&gt;So this is something (an e-reader) that I have always wanted to buy
+but did not go through with the plan. since I stare at a screen like
+all the time I am awake an e-reader is a welcome change in life.&lt;/p&gt;
+&lt;p&gt;Some of my main concerns were with the Kindle ecosystem that is very
+closely tied to Amazon. To get past that I would rather buy a kKobo
+Aura any day. Its a much better device than the Kindle
+Paper-white. That said, this Paper-White 2018 is waterproof and was
+available at a delicious discount on Amazon Prime day and getting a
+Kobo Aura is a fucking weird thing in India. So, it was the Kindle.&lt;/p&gt;
+&lt;p&gt;Now, the Kindle isn't a bad device for reading once you airgap it and
+side-load books using Calibre. Calibre is brilliant.&lt;/p&gt;
+&lt;p&gt;I'm using the kindle for medium to very dense books in the digital
+format. This is for books that need you to sit down and just read
+them. Books that demand focus. &lt;/p&gt;
+&lt;p&gt;So yeah, that is my system right now.&lt;/p&gt;
+&lt;p&gt;Quite happy with how the overall system turned out and I am reading
+significantly more these days.&lt;/p&gt;
+&lt;p&gt;I will soon make my reaing list public. I've been thinking of this for
+a long time and I think that this will be good. Goodreads is nice but
+it is too complex. &lt;/p&gt;</content><category term="Meta"></category><category term="Misc"></category></entry><entry><title>Reduce Waste Part 2</title><link href="https://signalshore.github.io/blog/What-a-waste-Part-2.html" rel="alternate"></link><published>2019-07-20T00:00:00+05:30</published><updated>2019-07-20T00:00:00+05:30</updated><author><name>Sohom</name></author><id>tag:signalshore.github.io,2019-07-20:/blog/What-a-waste-Part-2.html</id><summary type="html">&lt;p&gt;So back in January 2019 I decided to reduce the amount of waste I
+produce on a monthly basis. Read it &lt;a href="https://signalshore.github.io/blog/What-a-waste.html"&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Initial plan was to behave "normally" for three months and then try
+the reduction thing. That did not work because I was inconsistent with
+maintaining the record.&lt;/p&gt;
+&lt;p&gt;But …&lt;/p&gt;</summary><content type="html">&lt;p&gt;So back in January 2019 I decided to reduce the amount of waste I
+produce on a monthly basis. Read it &lt;a href="https://signalshore.github.io/blog/What-a-waste.html"&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Initial plan was to behave "normally" for three months and then try
+the reduction thing. That did not work because I was inconsistent with
+maintaining the record.&lt;/p&gt;
+&lt;p&gt;But, I am a consistent person generally speaking so it should not
+matter too much and now 4 months later I have quite interesting
+results.&lt;/p&gt;
+&lt;p&gt;Let's get to it. &lt;/p&gt;
+&lt;h1&gt;Where are we&lt;/h1&gt;
+&lt;p&gt;So right now when I look at my monthly schedule I can confidently say
+that the only two sources of plastics on a monthly basis are the Oats
+and the dates that I buy every month.&lt;/p&gt;
+&lt;p&gt;I'm still a bit sketchy on how many of these packets I need on a
+monthly basis but the number should not be more than two packets each.&lt;/p&gt;
+&lt;p&gt;I should add that there are certain days when I do buy a pack biscuit
+or a pack of peanut brittle etc etc, but I have managed to cut down
+that number to almost zero.&lt;/p&gt;
+&lt;p&gt;So yeah, that is the tl;dr. Read on to know what else I tried.&lt;/p&gt;
+&lt;h1&gt;My Diet&lt;/h1&gt;
+&lt;p&gt;I do not follow a very rigid diet plan however the basic rules that I follow are:
+- minimize packaging of food (buy non packed food; order-in instead of
+  take-out; no home delivery etc)
+- eat local (nothing imported; imported has a higher carbon cost associated with it)
+- minimize sugar
+- eat less (yeah!!)&lt;/p&gt;
+&lt;p&gt;Also this goes without saying that I am /not/ a foodie. I eat so that
+I can survive (rather don't die) and do other stuff that is important
+to me. Food is just a necessity, an implementation detail. (I am
+painfully aware how weird this apathy towards food is).&lt;/p&gt;
+&lt;p&gt;So, I eat lunch from a variety of different places and for dinner I
+generally eat oats (just add hot water) and sometimes I have fruits. I
+eat dates cause they are perfect for blood and they help with my sweet
+tooth.&lt;/p&gt;
+&lt;h1&gt;Food Habits&lt;/h1&gt;
+&lt;p&gt;Initially i used to skip a meal during the day. This was generally the
+breakfast. I would skip breakfast and have lunch directly at noon,
+followed by something light in the evening and then dinner by 10pm.&lt;/p&gt;
+&lt;p&gt;I tried to skip dinner and instead replacing it with breakfast. That
+would mean that I would not have to buy Oats and my total food intake
+would be same. That proved to be more difficult than I initially
+thought.&lt;/p&gt;
+&lt;p&gt;I really like the tasteless-ness in my mouth when I wake up and the
+idea of destroying that with food is un-ideal. So i try to maximize the
+time I can go without food.&lt;/p&gt;
+&lt;p&gt;So, can't skip dinner.&lt;/p&gt;
+&lt;p&gt;Moreover, I formed a habit of buying a packet of peanut brittle after
+lunch everyday. This was bad on multiple levels including adding a
+plastic wrapper to my waste everyday and adding a bunch of sugar to my
+diet.&lt;/p&gt;
+&lt;p&gt;However I could not will myself out of this habit.&lt;/p&gt;
+&lt;p&gt;Everything changed when I went to visit my family for 2 weeks. Those
+two weeks without any schedule that I formed in Mumbai really reset
+every habit that I had formed, and after returning I could not buy
+that packet of peanut brittle after lunch.&lt;/p&gt;
+&lt;h1&gt;Normal Lifestyle&lt;/h1&gt;
+&lt;p&gt;I'm quite spartan when it comes to other things and I do not buy stuff
+unless absolutely needed. Very recently I bought an amazon Kindle
+Paperwhite and I feel quite guilty about it. In my defense I wanted
+this for a long time, ever since my school days.&lt;/p&gt;
+&lt;h1&gt;Why all this ?&lt;/h1&gt;
+&lt;p&gt;It should not be surprising to anyone reading this that Climate Change
+is a big problem right now. In-fact it is probably one of the top most
+issues threatening the survival of all species on the planet. I am
+extremely pessimistic about the entire situation and I do not think
+that we will be able to contain climate change to a reasonable limit
+any time soon.&lt;/p&gt;
+&lt;p&gt;That said, I still want to fight the good fight and there are multiple
+ways in which that can be done. Currently the situation so dire that
+individual changes in lifestyle can not solve everything and the best
+way to fight this is to form groups and pressurize corporations and
+governments into making drastic changes that favor the
+environment. However, I would argue that individual changes also have
+a huge effect mainly because no individual exists in isolation, and
+hence they will spread some influence around. Furthermore, if every
+individual starts making drastic changes to their lifestyle then that
+will change the marketplace in which big companies operate and I think
+that that would have some positive effect.&lt;/p&gt;
+&lt;p&gt;Anyway, Thanks for reading. This is it for today. :-)&lt;/p&gt;</content><category term="Meta"></category><category term="Env"></category></entry><entry><title>I like Engineering.</title><link href="https://signalshore.github.io/blog/I-like-Engineering.html" rel="alternate"></link><published>2019-07-12T00:00:00+05:30</published><updated>2019-07-12T00:00:00+05:30</updated><author><name>Sohom</name></author><id>tag:signalshore.github.io,2019-07-12:/blog/I-like-Engineering.html</id><summary type="html">&lt;p&gt;I had a realization very very recently.&lt;/p&gt;
+&lt;p&gt;This is the sort of thing that can happen only out of the blue when
+you are thinking about it in hindsight.&lt;/p&gt;
+&lt;p&gt;I went on a trek with a bunch of friends. It was an organized trek so
+there was an extended group …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I had a realization very very recently.&lt;/p&gt;
+&lt;p&gt;This is the sort of thing that can happen only out of the blue when
+you are thinking about it in hindsight.&lt;/p&gt;
+&lt;p&gt;I went on a trek with a bunch of friends. It was an organized trek so
+there was an extended group of people as well. It was super fun. 
+During the trek we came across a small dam (a proper human-made dam
+will gates to control the flow of water etc etc). For a moment I was
+transfixed by this seemingly ordinary dam.&lt;/p&gt;
+&lt;p&gt;I see people walk up to a dog and pet it, or see a cat and walk towards
+it. For me, I am drawn towards machines, human made "engineering"
+things. After the trek, when I think about it, I feel the situation is
+same as that of people and dogs/cats.&lt;/p&gt;
+&lt;p&gt;I think I should explore this a bit further. &lt;/p&gt;
+&lt;p&gt;What was my thinking when I saw that dam during the trek ?&lt;/p&gt;
+&lt;p&gt;I can remember certain details that I noticed.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The gates were curved and they weren't too wide which means that the
+  dam is not designed to stop a huge flow of water.&lt;/li&gt;
+&lt;li&gt;The gates were above water which suggests that this dam was designed
+  on the same lines as some of the dams in Netherlands. This design
+  enables easier maintenance of the gates as their normal resting
+  state is above water.&lt;/li&gt;
+&lt;li&gt;There was not water flow indicating that the dam was not operational (maybe)&lt;/li&gt;
+&lt;li&gt;I tried to spot any motors nearby which would be the mechanism used
+  to raise/lower the gates. Could not find anything like that, but
+  there were some large manual screws which suggests that maybe this
+  is a manual mechanism.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;As any well-read engineer can tell that I am practically speculating
+right now, I have NO idea even if any of these assumptions are correct
+about the dam that I saw, but these were going on inside my head at
+that time. I wasn't stuck on the dam for a long time, maybe I stood
+there for about a minute, then kept walking.&lt;/p&gt;
+&lt;p&gt;My point is, this is a pattern that I have failed to observe in myself
+for a long time (or maybe I did observe but never thought about it
+actively). I am more interested in how the game engine works than the
+actual game. I am more interested is how something works than that
+particular something.&lt;/p&gt;
+&lt;p&gt;What draws me to these seemingly ordinary pieces of engineering is
+that I find these marvelous. The sheer amount of complexity that goes
+into making these is a testament to human cleverness. We have
+discovered/invented so much; and we have so much more to go. &lt;/p&gt;
+&lt;p&gt;That is just inspiring. :-)&lt;/p&gt;</content><category term="Meta"></category><category term="Misc"></category></entry><entry><title>Instant Messaging et. al.</title><link href="https://signalshore.github.io/blog/Instant-Messaing.html" rel="alternate"></link><published>2019-05-05T00:00:00+05:30</published><updated>2019-05-05T00:00:00+05:30</updated><author><name>Sohom</name></author><id>tag:signalshore.github.io,2019-05-05:/blog/Instant-Messaing.html</id><summary type="html">&lt;p&gt;About 2 weeks ago I uninstalled WhatsApp from my phone. This decision
+was many weeks into the making. Below, I will attempt to distill my
+experience and some insights I gained during this exercise. Whatever
+I have written below is completely based on my experience and even
+though I have …&lt;/p&gt;</summary><content type="html">&lt;p&gt;About 2 weeks ago I uninstalled WhatsApp from my phone. This decision
+was many weeks into the making. Below, I will attempt to distill my
+experience and some insights I gained during this exercise. Whatever
+I have written below is completely based on my experience and even
+though I have done some research, I am far from being authoritative on
+this topic. That said, if I am wrong then please reach out and help me
+understand this better.&lt;/p&gt;
+&lt;p&gt;I have tried my best to group the content under appropriate headers
+which are somewhat related. This is long read BTW. &lt;/p&gt;
+&lt;h2&gt;The urgency of Instant Messaging&lt;/h2&gt;
+&lt;p&gt;WhatsApp is what we call an Instant Messaging application. The idea
+being that you can reach anyone, anywhere instantly. &lt;/p&gt;
+&lt;p&gt;The key word here is the "instant" part, and there is very specific
+set of features that these apps use to guide its users into that
+"instant" mindset. After all, it's in the apps best interest to keep
+the user on the app for the maximum amount of time. The use of "Last
+seen", "online/typing", read receipts etc all work together to create
+an environment where there is an innate sense of urgency.&lt;/p&gt;
+&lt;p&gt;I would expect instant replies to my messages. This got too weird too
+fast.  There would be times when I would check the online/typing
+status and get angry (unreasonably so) if someone was online but not
+replying.&lt;/p&gt;
+&lt;p&gt;Notice how self-centered and negative this line of thinking is for it
+completely ignores the fact that the other person is a human being who
+has some work other than replying to my messages and instead focuses
+only on, "they got my message (double ticks), they saw my
+message (the ticks are blue), they are online (it shows online), but
+they are not replying for whatever reason."&lt;/p&gt;
+&lt;p&gt;Moreover this is not how a real human conversation works. In my
+opinion emails and IRC have done a much better job of simulating human
+communication in the digital form. With emails there is no
+expectation of instant replies and with IRC you are part of the
+conversation as long as you are signed-in to the channel (chat room).&lt;/p&gt;
+&lt;h2&gt;The human-ness of communication&lt;/h2&gt;
+&lt;p&gt;Communication is a very human phenomenon (not only limited to humans,
+but in this context we are focusing on communication between humans),
+however communicating via Instant Messaging reduces the experience of
+communication to just some exchange of text messages and maybe some
+emojis. Human communication isn't that shallow.&lt;/p&gt;
+&lt;p&gt;When we talk with someone face-to-face or via a phone call it's not
+just the normal exchange of words, but at the same time there are
+multiple other cues (for lack of a better word) that are communicated
+and interpreted.&lt;/p&gt;
+&lt;p&gt;Cues like, how was the sentence spoken, was it too fast or too slow,
+how did they sound, which syllable did they stress on, how was
+their expression, body language, what were they doing with their feet,
+their hands, was there eye-contact, etc etc. All of this is missing
+from IM.&lt;/p&gt;
+&lt;p&gt;The lack of these cues increases the ambiguity in a conversation which
+makes it incredibly hard for me as an individual to judge the tone of
+the conversation. I've been told in various ways that I ask a lot of
+questions precisely because I need to ask a lot of questions to judge
+the tone of the conversation. This also includes multiple hours of
+agony thinking "Did they mean it like this or like that ?" etc
+etc. Also, its weird that some people (read. most of them) do not
+really reply to all the questions you ask in a big message.&lt;/p&gt;
+&lt;p&gt;Personally, I enjoy (rather; started to enjoy) the weird laughter, the
+"umms" and the "hmms", the random hand movements etc etc that we get
+to experience in a real conversation.&lt;/p&gt;
+&lt;h2&gt;Different persona&lt;/h2&gt;
+&lt;p&gt;Over the internet it is much easier to be a completely different
+version of yourself. A lot of communication is context and since that
+is essentially absent from instant messaging, it leaves a lot of room
+for interpretation on both the sending and the receiving end.&lt;/p&gt;
+&lt;p&gt;Furthermore, since the lack of human-ness also acts as a shield since
+you don't have to deal with the actual human. So you can say anything
+you want without facing the full consequences of it. This makes it
+very easy to say certain things both good and bad. This leads to
+things like firing someone via an email, or breaking up with someone
+via a text.&lt;/p&gt;
+&lt;p&gt;I've experienced that it's much easier to offer a incredibly
+non-constructive criticism over the internet (i.e. something that does
+not do the other person any good but makes them feel bad), while its
+also incredibly easy to compliment someone or to say something
+encouraging to someone over the internet. Try saying "I believe in
+you" to someone face-to-face. Its terrifying, but at the same time its
+much more rewarding if you can actually do it.&lt;/p&gt;
+&lt;h2&gt;My attention span&lt;/h2&gt;
+&lt;p&gt;I'm always online. It's an integral part of my work, my studies etc
+etc. This means that I am also very very over-stimulated, all the
+time.&lt;/p&gt;
+&lt;p&gt;A large part of my work necessitates that I be able to &lt;em&gt;context
+switch&lt;/em&gt; between different tasks of varying complexity very quickly, so
+being able to switch laser focus from one task to another for a small
+amount of time and then again switch back is vital. At work, at any
+point of time I generally work on a long term agenda (like weekly
+work-goal), some short term critical bug-fixes, older code cleanup
+(cause there is always a better way to do stuff), personal
+side-projects (like this blog) and studying. Apart from this I have at
+least three communication applications open at the same time and I am
+interacting with at least 4 groups on a regular basis (work group,
+meetup group, NGO etc etc).&lt;/p&gt;
+&lt;p&gt;Also "work" is not like a continuous 9 hour marathon. Most of my work
+is some random hours distributed over multiple smaller spikes
+throughout the day. (because hey, the database backup takes a long time
+and a problem is a problem regardless of whether its a work problem
+or a non-work problem).&lt;/p&gt;
+&lt;p&gt;What this means is that I have a really hard time trying to focus on
+important things that are not too important. Things like reading a
+considerably boring section of an otherwise interesting paper, or a
+decently boring part of a book or more importantly sitting down to
+study, but not actually studying because I get distracted too easily
+and the material I am studying is somewhat more difficult. Things have
+become so bad that I find it difficult to sit through an entire movie
+without either skipping the "slow" parts or speeding the movie up. I
+find YouTube videos too slow at the "normal" pace and hence I speed it
+up to 1.75x now. I started with 1.25x about 3 months ago.&lt;/p&gt;
+&lt;p&gt;Things aren't that bad though. I find that I am able to focus only
+when the problem at hand is too critical or too challenging (not
+difficult) or when it is something that I am very interested
+in. Anything less that and my mind starts to wander. Needless to say
+all this is extremely difficult for me to admit and hence I really think
+I should do something actively to fix it.&lt;/p&gt;
+&lt;p&gt;It's a mess in my head and I need to fix it. Removing WhatsApp and
+other non-critical stuff for two weeks kind of reduced the amount of
+stimulus I had on a daily basis. From the first day itself there was a
+sense of emptiness which was really amazing.&lt;/p&gt;
+&lt;h2&gt;The fragility and plasticity of human communication&lt;/h2&gt;
+&lt;p&gt;Human communication has always been very fragile. Fragile in a sense
+that, once a conversation between two people are over it exists only
+in the minds of the participants which in the long term can cause the
+memory of that conversation to morph into something else entirely so
+much so that different participants have completely different
+recollections of the same conversation. Memory is plastic after-all
+(and there is a lot of research to prove this)&lt;/p&gt;
+&lt;p&gt;This also means that people forget things that they talked about from
+time to time and this is normal. The brain does a regular clean-up job
+when we sleep deleting the less important stuff while stashing the
+more important stuff (watch Inside Out). For me personally I tend to
+remember some weird details and whatnot.&lt;/p&gt;
+&lt;p&gt;Initially this used to be very annoying but over time I realized that
+this is a very important feature of human communication. This
+forget-able-ness is the reason why it feels so good when a very old
+friend brings up a very old topic etc etc.&lt;/p&gt;
+&lt;p&gt;With instant messaging everything is permanent since everything is
+recorded. There is no ambiguity as to what was said, but at the same
+time there is no context information also. This can be weird
+especially if you re-read old messages without any context
+whatsoever. Again, in my opinion this is not how human communication is
+supposed to be. (Watch Black Mirror S1E3 - 
+&lt;a href="https://en.wikipedia.org/wiki/The_Entire_History_of_You"&gt;The Entire History of You&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;Also, when people forget conversations, it's actually fun because you
+get to have the same conversations again with them. &lt;/p&gt;
+&lt;h2&gt;Dependence&lt;/h2&gt;
+&lt;p&gt;I have always been obsessed with the idea of being independent of all
+(well certain) forms of attachment and with the idea of less; less
+things, less needs etc etc and so far it has been a somewhat
+interesting journey trying to carve a lifestyle that fits those
+goals.&lt;/p&gt;
+&lt;p&gt;I have always played with the idea of giving up all forms of instant
+messaging, but that idea seemed too much in a way, particularly
+because I am too much dependent of these applications and I kept
+thinking that it would be too difficult; that life would be too tough
+without them.&lt;/p&gt;
+&lt;p&gt;To my utter surprise, nothing could be further from the truth. I
+stopped "missing" WhatsApp from the moment I uninstalled it from my
+phone and to be honest, its been rather an amazing experience so
+far. I have a lot of time now.&lt;/p&gt;
+&lt;p&gt;It was not easy though. There are certain people that I enjoy talking
+to, who are available only on WhatsApp and since I moved around a bit I
+have a lot of remote friends, so WhatsApp (or any IM application) is
+necessary, which is one of the reasons I will be installing it back
+again. But yes! it was a good change.&lt;/p&gt;
+&lt;p&gt;That said, a lot of international collaborations work and function as
+they do precisely because of these applications and the kind of closeness
+they enable. So it would be unfair to say that these applications are
+all "bad". I would speculate that the only "bad" thing is that when
+these applications form a rather large part of your daily
+communication.&lt;/p&gt;
+&lt;p&gt;Letting go of Reddit was much easier.&lt;/p&gt;
+&lt;h2&gt;Notes to self&lt;/h2&gt;
+&lt;p&gt;I called up a bunch of people and that was amazing. Should do that more often.&lt;/p&gt;
+&lt;p&gt;I did not miss WhatsApp as much as I thought I would.&lt;/p&gt;
+&lt;p&gt;And most importantly, there are certain people with whom the
+experience on instant messaging and real life conversations is
+phenomenal and almost indistinguishable. My best guess would be that
+these people experience IMs the same way I do (to some extent) and
+hence our conversations are somewhat better.&lt;/p&gt;
+&lt;p&gt;Finally, Its all in the head. Most of the things you think you need;
+you don't!!&lt;/p&gt;
+&lt;p&gt;I hope this makes sense.&lt;/p&gt;
+&lt;p&gt;Thanks!&lt;/p&gt;</content><category term="Meta"></category></entry><entry><title>Programming Languages Part A</title><link href="https://signalshore.github.io/blog/Programming-Languages-Part-A.html" rel="alternate"></link><published>2019-03-30T00:00:00+05:30</published><updated>2019-03-30T00:00:00+05:30</updated><author><name>Sohom</name></author><id>tag:signalshore.github.io,2019-03-30:/blog/Programming-Languages-Part-A.html</id><summary type="html">&lt;p&gt;I am planning to use the &lt;a href="https://signalshore.github.io/tag/learning.html"&gt;Learning&lt;/a&gt; tag to create a series of posts
+about &lt;em&gt;every&lt;/em&gt; online course I will take. The idea is to document
+everything in my blog. Having something that I can refer to is also
+super awesome.&lt;/p&gt;
+&lt;h1&gt;Structure&lt;/h1&gt;
+&lt;p&gt;The entire course is quite long. The way …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I am planning to use the &lt;a href="https://signalshore.github.io/tag/learning.html"&gt;Learning&lt;/a&gt; tag to create a series of posts
+about &lt;em&gt;every&lt;/em&gt; online course I will take. The idea is to document
+everything in my blog. Having something that I can refer to is also
+super awesome.&lt;/p&gt;
+&lt;h1&gt;Structure&lt;/h1&gt;
+&lt;p&gt;The entire course is quite long. The way Dan (the instructor) has
+structured the course is that he divided the course into 3 parts. &lt;/p&gt;
+&lt;p&gt;In Part A we used the programming language SML (Standard Meta
+Language) since the primary focus of this part of the course is to
+learn about functional programming languages with static type checking
+(I will talk about these later). In Part B we use Racket and in Part C
+we use Ruby.&lt;/p&gt;
+&lt;h4&gt;&lt;em&gt;NOTE: haven't taken parts B and C of the course so I'm not too clear on that.&lt;/em&gt;&lt;/h4&gt;
+&lt;h1&gt;Part A : SML&lt;/h1&gt;
+&lt;p&gt;I will write get to the point and write about each major topic that I
+learned.&lt;/p&gt;
+&lt;h3&gt;Functional Programming and Pure Functions&lt;/h3&gt;
+&lt;p&gt;This section defined functional programming for me. I have programmed
+a little bit in Scheme before (due to SICP) but I never really learned
+what Functional Programming really means. As a result I could not
+define it when someone asked me what it is. &lt;/p&gt;
+&lt;p&gt;Turns out that I never really understood &lt;em&gt;pure functions&lt;/em&gt;, which is
+the core concept around which functional programming revolves. Now,
+pure functions are a mathematical concept. Mathematically a function
+just takes a value and returns a result. It does &lt;em&gt;nothing&lt;/em&gt; else, or
+more specifically it changes nothing else. Moreover a function has to
+return the same result for the same argument &lt;em&gt;always&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Well, how does this translate into programming ?&lt;/p&gt;
+&lt;p&gt;In programming terms, a pure function has to have no &lt;em&gt;side effects&lt;/em&gt;
+Side effects is a term computer people use to confuse non-computer
+people. It means that a function should not mutate any mutable
+variables/references in the environment. This gets tricky sometimes,
+especially if the programming language allows and encourages
+mutations.  Object-Oriented languages allow mutation and that can lead
+to some interesting problems (and security vulnerabilities) in
+software.&lt;/p&gt;
+&lt;p&gt;Essentially I wrote a lot of &lt;em&gt;functional&lt;/em&gt; code for this course and its
+exercises and homework assignments. That was fun.&lt;/p&gt;
+&lt;h3&gt;Static Typing&lt;/h3&gt;
+&lt;p&gt;SML is a statically typed language, which means that the programs are
+type checked by the compiler before being run.&lt;/p&gt;
+&lt;p&gt;A typical program in SML with all types explicitly mentioned looks
+like this. Its a simple function that takes two numbers and adds them.&lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
+2&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kr"&gt;fun&lt;/span&gt; &lt;span class="nf"&gt;add&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;int&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;int&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt; &lt;span class="n"&gt;int&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; 
+    &lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="n"&gt;+&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;p&gt;The type of the &lt;code&gt;add&lt;/code&gt; function is &lt;code&gt;fn: int * int -&amp;gt; int&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Let's write a recursive program that calculates &lt;code&gt;n raised to m&lt;/code&gt;.&lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
+2
+3
+4&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kr"&gt;fun&lt;/span&gt; &lt;span class="nf"&gt;pow&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;m&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;int&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;n&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;int&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt;
+    &lt;span class="kr"&gt;if&lt;/span&gt; &lt;span class="n"&gt;m&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;
+    &lt;span class="kr"&gt;then&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
+    &lt;span class="kr"&gt;else&lt;/span&gt; &lt;span class="n"&gt;m&lt;/span&gt; &lt;span class="n"&gt;*&lt;/span&gt; &lt;span class="n"&gt;pow&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;m&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;n-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;p&gt;The type of &lt;code&gt;pow&lt;/code&gt; function is &lt;code&gt;fn: int * int -&amp;gt; int&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;I had some trouble understanding how the type system worked in SML,
+but things got quite clear after a bunch of exercises where we are
+required to write a very limited type checker ourselves. This was one
+of the best exercises in the entire course in my opinion. Turns out the
+type checker is just a massively logical piece of code and not &lt;em&gt;magic&lt;/em&gt;
+and things do make sense if you know the type checking rules really
+well.&lt;/p&gt;
+&lt;h3&gt;Type-Inference&lt;/h3&gt;
+&lt;p&gt;In SML you are not required to explicitly mention the types of every
+expression, the type checker can infer the types itself. I found this
+very un-intuitive at first, but reading about the process made it
+quite obvious.&lt;/p&gt;
+&lt;p&gt;Let us rewrite the above functions without explicitly mentioning
+types.&lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
+2
+3
+4
+5
+6
+7&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kr"&gt;fun&lt;/span&gt; &lt;span class="nf"&gt;add&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt;
+    &lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="n"&gt;+&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+&lt;span class="kr"&gt;fun&lt;/span&gt; &lt;span class="nf"&gt;pow&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;m&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt;
+    &lt;span class="kr"&gt;if&lt;/span&gt; &lt;span class="n"&gt;m&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;
+    &lt;span class="kr"&gt;then&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
+    &lt;span class="kr"&gt;else&lt;/span&gt; &lt;span class="n"&gt;m&lt;/span&gt; &lt;span class="n"&gt;*&lt;/span&gt; &lt;span class="n"&gt;pow&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;m&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;n-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;p&gt;In both these cases the type checker can infer the types of the
+functions and the arguments and the final type for both the functions
+is &lt;code&gt;fn: int * int -&amp;gt; int&lt;/code&gt;. The type checker can do this by &lt;code&gt;looking
+ahead&lt;/code&gt; into the function and inspecting the operations being performed
+on the arguments. The intuition being that when you check if an
+argument value is equal to &lt;code&gt;0&lt;/code&gt; or not, then the argument must be an
+integer. Similarly, if you are adding two arguments, they must be
+integers. To carry the idea forward, the static type checker would
+throw an error if you tried to perform some operation on incompatible
+types (like adding a string to an integer). This is also possible
+because the operators are not overloaded like how in python the &lt;code&gt;+&lt;/code&gt;
+operator can do both addition for integers and concatenation for
+strings. Having non-overloaded operators means that every operator has
+a very specific type of operands that it accepts, and anything
+otherwise would not type-check.&lt;/p&gt;
+&lt;h3&gt;Polymorphic Data-types&lt;/h3&gt;
+&lt;p&gt;Another thing that I found beautiful was the concept of polymorphic
+types in SML. In SML the type checker can figure out if there is a
+more-general way to write your program so that it can work for &lt;em&gt;more
+than a single type&lt;/em&gt; of arguments. It does this even if you specify a
+type. What this means is that your programs become more general. &lt;/p&gt;
+&lt;p&gt;Let's write a function with polymorphic data-types.&lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
+2&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kr"&gt;fun&lt;/span&gt; &lt;span class="nf"&gt;add_to_list&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt;
+    &lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="n"&gt;::&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;p&gt;The function &lt;code&gt;add_to_list&lt;/code&gt; builds a list by taking a object and a list
+and adds the object to the front of the list. The type of this
+function is &lt;code&gt;fn: 'a * 'a list -&amp;gt; 'a list&lt;/code&gt; where &lt;code&gt;'a&lt;/code&gt; is a polymorphic
+datatype as in it can take the type of any value passed to the
+function. Hence this function works for both integers and strings. &lt;/p&gt;
+&lt;p&gt;Look the the results of the function calls in the comments.&lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
+2
+3
+4
+5
+6
+7
+8&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;add_to_list&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,[]);&lt;/span&gt; 
+&lt;span class="cm"&gt;(* [2] : int list *)&lt;/span&gt;
+&lt;span class="n"&gt;add_to_list&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;]);&lt;/span&gt;
+&lt;span class="cm"&gt;(* [2,2,3] : int list *)&lt;/span&gt;
+&lt;span class="n"&gt;add_to_list&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;S&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,[]);&lt;/span&gt;
+&lt;span class="cm"&gt;(* [&amp;quot;S&amp;quot;] : string list *)&lt;/span&gt;
+&lt;span class="n"&gt;add_to_list&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;S&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,[&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;t&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;a&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;r&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;t&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;]);&lt;/span&gt;
+&lt;span class="cm"&gt;(* [&amp;quot;S&amp;quot;,&amp;quot;t&amp;quot;,&amp;quot;a&amp;quot;,&amp;quot;r&amp;quot;,&amp;quot;t&amp;quot;] : string list *)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;p&gt;It should be noted  that this functions will only work  if the type of
+the object and the type of the object  that the list is made up of are
+the same. This  is by definition since in SML  the &lt;code&gt;::&lt;/code&gt; operator works
+like that. Hence the following call will not type check because we are
+trying to add &lt;code&gt;S&lt;/code&gt; to the list &lt;code&gt;[2,3]&lt;/code&gt;.&lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
+2&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;add_to_list&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;S&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,[&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;]);&lt;/span&gt;
+&lt;span class="cm"&gt;(* Does not type check *)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;h3&gt;Pattern Matching&lt;/h3&gt;
+&lt;p&gt;Writing about pattern matching is tricky because it makes absolutely
+no sense without any context, and in order to establish context we
+would another series of blog posts which is not where I want to go
+with this. Let me try.&lt;/p&gt;
+&lt;p&gt;Imagine a &lt;code&gt;case&lt;/code&gt; expression. The utility of a case expression lies in
+the fact that a case expression can handle multiple branches or
+multiple cases.&lt;/p&gt;
+&lt;p&gt;The case expression in SML has the form&lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
+2
+3
+4
+5&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kr"&gt;case&lt;/span&gt; &lt;span class="n"&gt;expr_0&lt;/span&gt; &lt;span class="kr"&gt;of&lt;/span&gt;
+    &lt;span class="n"&gt;patt_1&lt;/span&gt; &lt;span class="p"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;expr_1&lt;/span&gt;
+  &lt;span class="n"&gt;|&lt;/span&gt; &lt;span class="n"&gt;patt_2&lt;/span&gt; &lt;span class="p"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;expr_2&lt;/span&gt;
+  &lt;span class="n"&gt;|&lt;/span&gt; &lt;span class="p"&gt;...&lt;/span&gt;
+  &lt;span class="n"&gt;|&lt;/span&gt; &lt;span class="n"&gt;patt_n&lt;/span&gt; &lt;span class="p"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;expr_n&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;p&gt;This is evaluated by first evaluating the &lt;code&gt;expr_0&lt;/code&gt; to &lt;code&gt;val_0&lt;/code&gt; and then
+pattern-matching it with &lt;code&gt;patt_i&lt;/code&gt; and then based on which pattern it
+matches with, the corresponding &lt;code&gt;expr_i&lt;/code&gt; is evaluated.&lt;/p&gt;
+&lt;p&gt;The pattern part is super cool because it lets you use constructors and operators within the pattern to pattern match against and you can also do variable binding within the pattern itself. &lt;/p&gt;
+&lt;p&gt;Let's see that in action. In the following program I will add all the elements of a list together.&lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
+2
+3
+4
+5
+6
+7
+8&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kr"&gt;fun&lt;/span&gt; &lt;span class="nf"&gt;add_list&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;xs&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt;
+    &lt;span class="kr"&gt;case&lt;/span&gt; &lt;span class="n"&gt;xs&lt;/span&gt; &lt;span class="kr"&gt;of&lt;/span&gt;
+        &lt;span class="p"&gt;[]&lt;/span&gt; &lt;span class="p"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
+     &lt;span class="n"&gt;|&lt;/span&gt; &lt;span class="n"&gt;x::xs&amp;#39;&lt;/span&gt; &lt;span class="p"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="n"&gt;+&lt;/span&gt; &lt;span class="n"&gt;add_list&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;xs&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+
+&lt;span class="n"&gt;add_list&lt;/span&gt;&lt;span class="p"&gt;([]);&lt;/span&gt;
+&lt;span class="n"&gt;add_list&lt;/span&gt;&lt;span class="p"&gt;([&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;]);&lt;/span&gt;
+&lt;span class="n"&gt;add_list&lt;/span&gt;&lt;span class="p"&gt;([&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;]);&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;p&gt;In this example basically we are matching against the cases where the list is either empty or not. If the list is empty we return 0 as the sum, otherwise we use pattern matching to split the list into the first element and the rest of the list (without the first element) and then recursively compute the sum.&lt;/p&gt;
+&lt;h3&gt;Lexical Scope and Closures&lt;/h3&gt;
+&lt;p&gt;The body of a function is evaluated in the environment where the
+function is defined, not the environment where the function is called.&lt;/p&gt;
+&lt;p&gt;We will see it in this example.&lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
+2
+3
+4
+5&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kr"&gt;val&lt;/span&gt; &lt;span class="nv"&gt;x&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="kr"&gt;fun&lt;/span&gt; &lt;span class="nf"&gt;test&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt; &lt;span class="n"&gt;+&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="kr"&gt;val&lt;/span&gt; &lt;span class="nv"&gt;x&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="n"&gt;test&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="cm"&gt;(* 5 *)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;p&gt;The output of this function is &lt;code&gt;5&lt;/code&gt; and not &lt;code&gt;9&lt;/code&gt; because when the
+function &lt;code&gt;test&lt;/code&gt; was defined, the value of &lt;code&gt;x = 2&lt;/code&gt; in the
+environment. Hence when the function was called it used that value of
+x as opposed the newer value where x is redefined to 4.&lt;/p&gt;
+&lt;p&gt;A function always has an environment associated with it. This
+environment contains the bindings at the time when the function was
+defined.  This associating of a function and its environment (lexical
+environment) is called a function closure, or simply; a closure.&lt;/p&gt;
+&lt;p&gt;Closures are really cool. I did not know before but as it turns out
+all the fancy things that I like about Functional Programming like
+Currying, Partial Applications etc etc are just closure idioms.&lt;/p&gt;
+&lt;p&gt;There are still &lt;em&gt;LOTS&lt;/em&gt; of details that I have not covered about
+pattern-matching.&lt;/p&gt;
+&lt;h3&gt;Tail Recursion&lt;/h3&gt;
+&lt;p&gt;After all this tail recursion is a relatively light-headed concept.&lt;/p&gt;
+&lt;p&gt;A tail call is a function call that is the very last operation in the
+calling function. i.e. the calling function has nothing to do after
+the function call and the result it receives from the function call is
+the final answer. &lt;/p&gt;
+&lt;p&gt;We will look at this using the factorial function.
+Mathematically we can define the factorial of a number as&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;factorial(n) = n * factorial (n - 1) ; when n &amp;gt; 1&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;We can write this in SML like,&lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
+2
+3
+4&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kr"&gt;fun&lt;/span&gt; &lt;span class="nf"&gt;factorial&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt;
+    &lt;span class="kr"&gt;if&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;
+    &lt;span class="kr"&gt;then&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
+    &lt;span class="kr"&gt;else&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="n"&gt;*&lt;/span&gt; &lt;span class="n"&gt;factorial&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="n"&gt;-&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;p&gt;Now, this is fine and it works; BUT, its not tail recursive. 
+This is because the calling function has to multiply the result from the recursive call with &lt;code&gt;x&lt;/code&gt; and then get the result.&lt;/p&gt;
+&lt;p&gt;Let's write the tail recursive version of this.&lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
+2
+3
+4
+5
+6
+7
+8&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kr"&gt;fun&lt;/span&gt; &lt;span class="nf"&gt;fac_tail&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt;
+    &lt;span class="kr"&gt;let&lt;/span&gt; &lt;span class="kr"&gt;fun&lt;/span&gt; &lt;span class="nf"&gt;helper&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;acc&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt;
+            &lt;span class="kr"&gt;if&lt;/span&gt; &lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;
+            &lt;span class="kr"&gt;then&lt;/span&gt; &lt;span class="n"&gt;acc&lt;/span&gt;
+            &lt;span class="kr"&gt;else&lt;/span&gt; &lt;span class="n"&gt;helper&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt; &lt;span class="n"&gt;*&lt;/span&gt; &lt;span class="n"&gt;acc&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;n&lt;/span&gt; &lt;span class="n"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+        &lt;span class="kr"&gt;in&lt;/span&gt;
+        &lt;span class="n"&gt;helper&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="kr"&gt;end&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;p&gt;Over here we have a helper function that takes two parameters.  The
+first parameter stores the value of &lt;code&gt;factorial(n - 1)&lt;/code&gt; and the second
+one keeps track of &lt;code&gt;n&lt;/code&gt;. &lt;/p&gt;
+&lt;p&gt;If we look at how we are calling the helper function recursively, we see that after the recursive call returns a value, we do not need to perform any operations on the result, since it is already the result we want. This is a tail call. &lt;/p&gt;
+&lt;p&gt;The benefits of tail calls is that compilers are smart enough to optimize tail calls and hence these recursive calls are not as expensive computationally.&lt;/p&gt;
+&lt;p&gt;Moreover, because of lexical scoping we can use any variable binding
+in the helper function without explicitly passing it during every
+call. This makes for very readable code. Using an accumulator to store the intermediate results also helps us avoid re-computation of already computed values. This is called memoization. &lt;/p&gt;
+&lt;h1&gt;Wrapping up and Reflections.&lt;/h1&gt;
+&lt;p&gt;This was by-far the most amazing course I have ever taken. I am 95%
+confident that this is exactly what I want to study going forward. It
+was quite challenging as well. Had a tough tiem figuring out work (I
+need to pay my bills :-P) and this course and a bunch of ofther
+commitments. I reckon I spent about 20 hours a week on this particular
+course. Anyway, super fun, can't wait for Part B.&lt;/p&gt;
+&lt;p&gt;Since I paid for this course (first online course I paid for) I got a
+certificate. My official final score is 95.1% which is good
+enough. &lt;a href="https://www.coursera.org/account/accomplishments/certificate/PF8DZ3V2S6N2"&gt;This&lt;/a&gt; is
+my online certificate. &lt;/p&gt;
+&lt;p&gt;I am using the Gitlab
+repo
+&lt;a href="https://gitlab.com/83bytes/programming_languages_coursera"&gt;Programming_languages_coursera&lt;/a&gt; to
+keep track of all my exercises and solutions. Currently I am keeping
+notes in a single large document with tons of comments. I haven't
+found a better way.&lt;/p&gt;
+&lt;p&gt;Its been a long time since I finished this course. I got detracted
+from my plan to start Part B ASAP. &lt;/p&gt;
+&lt;p&gt;I plan to revisit the challenge problems of week 2 and week 3 before
+starting Part B, which should take about a week more.&lt;/p&gt;</content><category term="Learning"></category><category term="CS"></category></entry><entry><title>Kumara-Parvatha and Savandurga</title><link href="https://signalshore.github.io/blog/Bangalore-Treks.html" rel="alternate"></link><published>2019-03-16T00:00:00+05:30</published><updated>2019-03-16T00:00:00+05:30</updated><author><name>Sohom</name></author><id>tag:signalshore.github.io,2019-03-16:/blog/Bangalore-Treks.html</id><summary type="html">&lt;p&gt;In the second week of January I had a trip planned to Bangalore. The
 main goal here was to figure out some work in Bangalore and college. &lt;/p&gt;
 &lt;p&gt;However during the Sandakphu trek some of the trekkers there
 convinced me that Western Ghats is amazing and that I should
@@ -1229,6 +2665,9 @@ not have too items in the luggage front as well. Just three bags
 to a different city and vacating their accommodation of three years.&lt;/p&gt;
 &lt;p&gt;So technically I can literally stuff everything I own into three
 bags. :-) &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;img alt="that tweet" src="/assets/images/2018-08-06/luggage.jpg"&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;I have been very very fortunate to meet/know some of the people that I
 know. All of them have had some impact on my life. I wanted to list
 all of them here but that would be a disservice to the people not
@@ -2045,8 +3484,8 @@ config is a dual-booted uefi setup with Arch Linux)&lt;/p&gt;
 In this section I have put together a list of things that should be essential to a smooth start.&lt;/p&gt;
 &lt;h3&gt;Per-User profile&lt;/h3&gt;
 &lt;p&gt;In the previous section we talked about how you guix maintain packages on a per-user basis. One easy method to maintain per user profiles is to create a manifest file. A manifest file is a scheme file that contains all the packages for a specific user. This way you can specify only the packages that you want to be available globally in the system configuration file and other packages can be installed on a per-user basis using the manifest file.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;#bash
-$ guix package -m profile.scm
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;#&lt;/span&gt;&lt;span class="n"&gt;bash&lt;/span&gt;
+&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;guix&lt;/span&gt; &lt;span class="n"&gt;package&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;m&lt;/span&gt; &lt;span class="n"&gt;profile&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;scm&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -3903,10 +5342,10 @@ Notice the '/' in the command he typed, Yep true story. Completely nuked all the
 &lt;p&gt;One thing we should remember is that the recovery part is not such a pain! PhotoRec is amazing and does an amazing job. The main pain is actually picking up the files that YOU want from he whole bunch of recovered files. This is because since PhotoRec does not have any method to determine if the deleted files were deleted accidentally or not, it recovers everything that was deleted and not overwritten. Thus we have a LOT of work to do. &lt;/p&gt;
 &lt;h3&gt;After the recovery&lt;/h3&gt;
 &lt;p&gt;These are some of the things that PhotoRec does after recovering the files.
-&lt;em&gt; Stores everything under multiple &lt;code&gt;recup_dir.&amp;lt;integer&amp;gt;&lt;/code&gt; directories. It looks something like this &lt;img alt="recovery ls" src="/assets/images/2017-07-20/reco_ls.png"&gt;
-&lt;/em&gt; Every file other than text files are properly named. As in other than text files all other files have their proper extensions. Thus PhotoRec doesn't mix up JPEG and PNG files.
-&lt;em&gt; That being said it does mix up text files. As in recovered Java files would sometimes be named as C++ header files and so on.
-&lt;/em&gt; PhotoRec also recovers ELF files which are nothing but executable files.&lt;/p&gt;
+* Stores everything under multiple &lt;code&gt;recup_dir.&amp;lt;integer&amp;gt;&lt;/code&gt; directories. It looks something like this &lt;img alt="recovery ls" src="/assets/images/2017-07-20/reco_ls.png"&gt;
+* Every file other than text files are properly named. As in other than text files all other files have their proper extensions. Thus PhotoRec doesn't mix up JPEG and PNG files.
+* That being said it does mix up text files. As in recovered Java files would sometimes be named as C++ header files and so on.
+* PhotoRec also recovers ELF files which are nothing but executable files.&lt;/p&gt;
 &lt;p&gt;&lt;blue&gt; How do we go about sorting this mess ?&lt;/blue&gt;
 Our first idea was to launch &lt;a href="http://nongnu.org/ranger/"&gt;ranger&lt;/a&gt; and inspect every single directory and delete directories if the contents didn't feel too important. Something like this.
 &lt;img alt="manual" src="/assets/images/2017-07-20/manual.png"&gt;

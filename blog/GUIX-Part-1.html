@@ -113,8 +113,8 @@ config is a dual-booted uefi setup with Arch Linux)</p>
 In this section I have put together a list of things that should be essential to a smooth start.</p>
 <h3>Per-User profile</h3>
 <p>In the previous section we talked about how you guix maintain packages on a per-user basis. One easy method to maintain per user profiles is to create a manifest file. A manifest file is a scheme file that contains all the packages for a specific user. This way you can specify only the packages that you want to be available globally in the system configuration file and other packages can be installed on a per-user basis using the manifest file.</p>
-<div class="highlight"><pre><span></span>#bash
-$ guix package -m profile.scm
+<div class="highlight"><pre><span></span><span class="o">#</span><span class="n">bash</span>
+<span class="err">$</span> <span class="n">guix</span> <span class="n">package</span> <span class="o">-</span><span class="n">m</span> <span class="n">profile</span><span class="p">.</span><span class="n">scm</span>
 </pre></div>
 
 
@@ -208,11 +208,13 @@ relevance: <span class="m">4</span>
 					<div class="col-md-6">
 						<h4>Tags</h4>
 						<ul class="list-unstyled my-list-style">
-						<a href="https://signalshore.github.io/tag/travel.html">Travel</a>,
-						<a href="https://signalshore.github.io/tag/env.html">Env</a>,
 						<a href="https://signalshore.github.io/tag/meta.html">Meta</a>,
+						<a href="https://signalshore.github.io/tag/tech.html">Tech</a>,
+						<a href="https://signalshore.github.io/tag/learning.html">Learning</a>,
 						<a href="https://signalshore.github.io/tag/cs.html">CS</a>,
 						<a href="https://signalshore.github.io/tag/misc.html">Misc</a>,
+						<a href="https://signalshore.github.io/tag/env.html">Env</a>,
+						<a href="https://signalshore.github.io/tag/travel.html">Travel</a>,
 						<a href="https://signalshore.github.io/tag/math.html">Math</a>,
 						<a href="https://signalshore.github.io/tag/data.html">Data</a>,
 						<a href="https://signalshore.github.io/tag/cycling.html">Cycling</a>,
